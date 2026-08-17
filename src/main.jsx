@@ -191,8 +191,10 @@ function App() {
             </div>
             <p className="hero-kicker">JAVA FULL STACK · AI · WEB DEVELOPMENT</p>
             <h1>
-              Building practical software with
-              <span> Java, React & AI.</span>
+             Driven to Learn.
+            <span> Ready to Build.</span>
+            <br />
+             Eager to Make an Impact.
             </h1>
             <p className="hero-description">
               Hi, I’m Kethan Deepak. I’m a recent B.Tech graduate and an aspiring
