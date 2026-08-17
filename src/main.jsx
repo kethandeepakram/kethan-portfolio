@@ -33,8 +33,8 @@ const profile = {
   email: "rkethandeepakram@gmail.com",
   linkedin: "https://www.linkedin.com/in/kethan-deepak-ram-r-795a46265/?locale=en",
   github: "https://github.com/kethandeepakram",
-  photo: "/kethan-profile.jpg",
-  resume: "/R-Kethan-Deepak-Ram-Resume.pdf",
+  photo: `${import.meta.env.BASE_URL}kethan-profile.jpg`,
+resume: `${import.meta.env.BASE_URL}R-Kethan-Deepak-Ram-Resume.pdf`,
 };
 
 const navItems = [
