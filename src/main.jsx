@@ -352,7 +352,7 @@ function App() {
 
         <section id="projects" className="section">
           <div className="section-heading">
-            <span className="section-index">03</span>
+            <span className="section-index">4</span>
             <div>
               <p className="eyebrow">Projects</p>
               <h2>Projects that show how I apply my stack.</h2>
@@ -389,7 +389,7 @@ function App() {
 
         <section id="education" className="section">
           <div className="section-heading">
-            <span className="section-index">04</span>
+            <span className="section-index">5</span>
             <div>
               <p className="eyebrow">Education</p>
               <h2>Academic foundation.</h2>
@@ -425,7 +425,7 @@ function App() {
 
         <section id="achievements" className="section">
           <div className="section-heading">
-            <span className="section-index">05</span>
+            <span className="section-index">6</span>
             <div>
               <p className="eyebrow">Certifications & Achievements</p>
               <h2>Beyond development, I explore AI through research.</h2>
