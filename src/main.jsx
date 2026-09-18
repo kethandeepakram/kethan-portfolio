@@ -28,7 +28,7 @@ import "./styles.css";
 const profile = {
   name: "R. Kethan Deepak Ram",
   shortName: "Kethan Deepak",
-  role: "Java Full Stack Developer | Fresher",
+  role: "Java Full Stack Developer | AI & Web Technologies | Fresher",
   phone: "+91 8124682887",
   email: "rkethandeepakram@gmail.com",
   linkedin: "https://www.linkedin.com/in/kethan-deepak-ram-r-795a46265/?locale=en",
@@ -41,6 +41,7 @@ const navItems = [
   ["Home", "home"],
   ["About", "about"],
   ["Skills", "skills"],
+  ["Experience", "experience"],
   ["Projects", "projects"],
   ["Education", "education"],
   ["Achievements", "achievements"],
@@ -49,12 +50,29 @@ const navItems = [
 
 const skills = [
   { group: "Programming", items: ["Java", "Python", "SQL"] },
-  { group: "Backend", items: ["Spring Boot", "REST APIs"] },
+  { group: "Backend", items: ["Spring Boot", "REST APIs", "Hibernate/JPA", "Microservices", "System Design"] },
   { group: "Frontend", items: ["HTML5", "CSS3", "JavaScript", "React.js"] },
   { group: "AI & Data", items: ["Artificial Intelligence", "Machine Learning", "NLP", "OpenAI API"] },
-  { group: "Database", items: ["MySQL", "Supabase"] },
-  { group: "Development", items: ["Full-Stack Development", "API Integration", "Authentication"] },
-  { group: "Tools", items: ["Git", "GitHub", "Clerk", "PostHog", "Oxylabs"] },
+  { group: "Database", items: ["MySQL", "Supabase (PostgreSQL)"] },
+  { group: "Cloud & DevOps", items: ["Microsoft Azure", "Git", "GitHub", "CI/CD", "Vercel", "Render"] },
+  { group: "Tools & Integrations", items: ["Clerk", "PostHog", "Oxylabs", "Postman", "API Integration", "Authentication"] },
+];
+
+const experience = [
+  {
+    title: "Java Intern",
+    company: "GenOrcasx",
+    period: "March 2026 — August 2026",
+    description:
+      "Developed a customer support platform using Java and Spring Boot with ticket management, secure authentication, role-based workflows, REST APIs, MySQL, and a basic AI chatbot.",
+  },
+  {
+    title: "Android Application Development Intern",
+    company: "NSIC — Technical Service Centre",
+    period: "June 2023 — July 2023",
+    description:
+      "Gained practical exposure to Android application development, mobile app workflows, debugging, and core Java concepts while building and testing functional components.",
+  },
 ];
 
 const projects = [
@@ -81,6 +99,18 @@ const projects = [
       "Integrated PostHog for user behavior tracking, product analytics, feature experimentation, and bug monitoring.",
     ],
     tech: ["React.js", "OpenAI API", "Oxylabs", "Clerk", "Supabase", "PostHog"],
+  },
+  {
+    number: "03",
+    title: "AI-Powered Customer Support System",
+    description:
+      "A Java and Spring Boot customer support platform with ticket management, secure authentication, role-based workflows, REST APIs, MySQL, and a basic AI chatbot.",
+    highlights: [
+      "Built ticket workflows for logging, tracking, and resolving customer queries end-to-end.",
+      "Implemented authentication and role-based access for customer, agent, and admin workflows.",
+      "Connected REST APIs to a basic AI chatbot and stored tickets, accounts, and chat history in MySQL.",
+    ],
+    tech: ["Java", "Spring Boot", "REST APIs", "MySQL", "Authentication", "AI Chatbot"],
   },
 ];
 
@@ -197,17 +227,17 @@ function App() {
              Eager to Make an Impact.
             </h1>
             <p className="hero-description">
-              Hi, I’m Kethan Deepak. I’m a recent B.Tech graduate and an aspiring
-              Java Full Stack Developer. I have hands-on knowledge of Java, Spring
-              Boot, REST APIs, SQL, React.js, and web development. Along with
-              full-stack development, I also have a good understanding of AI
-              technologies and modern AI concepts, and I’m interested in exploring
-              how AI can be integrated into real-world applications.
+              Hi, I’m Kethan Deepak. I’m a recent B.Tech graduate in Artificial
+              Intelligence and Data Science with hands-on experience building
+              full-stack, AI-integrated applications using Java, Spring Boot,
+              React.js, Python, MySQL, and Microsoft Azure. I work with REST APIs,
+              NLP/ML integration, and third-party APIs including OpenAI, Clerk,
+              and Supabase.
             </p>
             <p className="hero-description secondary">
-              I’m a quick learner, passionate about technology, and looking for an
-              opportunity where I can apply my skills, learn from experienced
-              professionals, and contribute to the organization’s growth.
+              I’m focused on building practical, scalable applications and looking
+              for an entry-level developer opportunity where I can contribute to
+              production-oriented projects and grow with an experienced team.
             </p>
 
             <div className="hero-actions">
@@ -322,7 +352,7 @@ function App() {
                 <p>Anand Institute of Higher Technology · Anna University</p>
                 <div className="education-meta">
                   <span>2025</span>
-                  <span>CGPA 7.9 / 10</span>
+                  <span>CGPA 8.0 / 10</span>
                 </div>
               </div>
             </article>
@@ -350,9 +380,32 @@ function App() {
           </div>
         </section>
 
+        <section id="experience" className="section">
+          <div className="section-heading">
+            <span className="section-index">03</span>
+            <div>
+              <p className="eyebrow">Experience</p>
+              <h2>Hands-on experience across software and application development.</h2>
+            </div>
+          </div>
+          <div className="timeline">
+            {experience.map((item) => (
+              <article className="timeline-item" key={item.title}>
+                <div className="timeline-dot"></div>
+                <div className="timeline-content">
+                  <span className="timeline-year">{item.period}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.company}</p>
+                  <p className="experience-description">{item.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section id="projects" className="section">
           <div className="section-heading">
-            <span className="section-index">4</span>
+            <span className="section-index">04</span>
             <div>
               <p className="eyebrow">Projects</p>
               <h2>Projects that show how I apply my stack.</h2>
@@ -389,7 +442,7 @@ function App() {
 
         <section id="education" className="section">
           <div className="section-heading">
-            <span className="section-index">5</span>
+            <span className="section-index">05</span>
             <div>
               <p className="eyebrow">Education</p>
               <h2>Academic foundation.</h2>
@@ -404,7 +457,7 @@ function App() {
                 <h3>B.Tech — Artificial Intelligence and Data Science</h3>
                 <p>Anand Institute of Higher Technology</p>
                 <div className="education-meta">
-                  <span>CGPA 7.9 / 10</span>
+                  <span>CGPA 8.0 / 10</span>
                   <span>Anna University</span>
                 </div>
               </div>
@@ -425,7 +478,7 @@ function App() {
 
         <section id="achievements" className="section">
           <div className="section-heading">
-            <span className="section-index">6</span>
+            <span className="section-index">06</span>
             <div>
               <p className="eyebrow">Certifications & Achievements</p>
               <h2>Beyond development, I explore AI through research.</h2>
